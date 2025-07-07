@@ -205,3 +205,25 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Visual Studio Code
+.vscode/
+
+# Local History for Visual Studio Code
+.history/
+
+# Visual Studio Code - Server - Remote Development
+.remote/
+
+# My notes
+notes.txt
+
+# Snyk Security
+.dcignore
+
+# REST Client
+*.http
+*.rest
+
+# Backup files
+*.bck
