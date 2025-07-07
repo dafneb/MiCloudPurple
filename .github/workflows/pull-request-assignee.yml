@@ -19,7 +19,7 @@ jobs:
     permissions:
       issues: write
       pull-requests: write
-    uses: dafneb/.github/.github/workflows/pull-request-assignee.yml@a2f53d22ef23e9fc69512572ecbd70ffc447b45f
+    uses: dafneb/.github/.github/workflows/pull-request-assignee.yml@3f124afb6b96358a69a6a8e70a1b62904b4da4cb
     with:
       assignees: ${{ github.actor }}
     secrets: inherit
