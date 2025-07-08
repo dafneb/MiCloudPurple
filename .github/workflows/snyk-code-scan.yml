@@ -1,0 +1,36 @@
+name: Snyk Code Scan
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'development'
+      - 'stable'
+      - 'release/v*"'
+      - 'feature/*'
+      - 'issue/*'
+    paths-ignore:
+      - '.github/workflows/*'
+      - '**/*.md'
+      - '**/*.txt'
+  pull_request:
+    branches:
+      - 'main'
+      - 'stable'
+      - 'development'
+      - 'release/v*"'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  security:
+    name: Snyk Code Scan
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    uses: dafneb/.github/.github/workflows/snyk-code-scan-python.yml@3f124afb6b96358a69a6a8e70a1b62904b4da4cb
+    secrets:
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

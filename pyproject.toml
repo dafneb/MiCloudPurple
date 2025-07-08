@@ -1,0 +1,49 @@
+# See PEP 518 for the spec of this file
+# https://www.python.org/dev/peps/pep-0518/
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name =  "MiCloudPurple"
+version = "1.0.0"
+authors = [
+    {name = "David Burel", email = "david.burel@burelovi.eu"},
+]
+description = "Microsoft Cloud Purple tool."
+readme = "README.md"
+keywords = [
+    "microsoft",
+    "azure",
+    "pentesting",
+    "office365",
+    "red-team",
+    "blue-team",
+    "misconfiguration",
+    "m365",
+    "purple-team",
+    "entra-id",
+    "entraid",
+    "misconfiguration-detection",
+    "cloud"
+]
+
+dependencies = [
+    "requests~=2.32.4",
+    "dnspython~=2.7.0",
+]
+
+classifiers=[
+    "Development Status :: 2 - Pre-Alpha",
+    'Intended Audience :: Developers',
+    'Natural Language :: English',
+    "Programming Language :: Python :: 3 :: Only",
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+requires-python = ">=3.10"
