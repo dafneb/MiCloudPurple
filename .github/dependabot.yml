@@ -8,10 +8,28 @@ updates:
   directory: "/"
   schedule:
     interval: "daily"
-    time: "16:00"
+    time: "02:00"
+    timezone: "Europe/Prague"
   groups:
-    all-actions:
-      patterns: [ "*" ]
+    major-updates:
+      patterns:
+        - "*"
+      update-types:
+        - "major"
+    support-dependencies:
+      applies-to: version-updates
+      patterns:
+        - "*"
+      update-types:
+        - "minor"
+        - "patch"
+    security-dependencies:
+      applies-to: security-updates
+      patterns:
+        - "*"
+      update-types:
+        - "minor"
+        - "patch"
   labels:
     - "dependencies"
     - "github-actions"
@@ -20,10 +38,28 @@ updates:
   directory: "/"
   schedule:
     interval: "daily"
-    time: "16:00"
+    time: "02:00"
+    timezone: "Europe/Prague"
   groups:
-    all-actions:
-      patterns: [ "*" ]
+    major-updates:
+      patterns:
+        - "*"
+      update-types:
+        - "major"
+    support-dependencies:
+      applies-to: version-updates
+      patterns:
+        - "*"
+      update-types:
+        - "minor"
+        - "patch"
+    security-dependencies:
+      applies-to: security-updates
+      patterns:
+        - "*"
+      update-types:
+        - "minor"
+        - "patch"
   labels:
     - "dependencies"
     - "python"
