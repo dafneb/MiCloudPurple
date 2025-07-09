@@ -7,8 +7,8 @@ on:
       - 'development'
       - 'stable'
       - 'release/v*'
-      - 'feature/*'
-      - 'issue/*'
+      - 'feature/**'
+      - 'issue/**'
     paths-ignore:
       - '.github/workflows/*'
       - '**/*.md'
