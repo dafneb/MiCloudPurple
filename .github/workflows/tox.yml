@@ -1,4 +1,4 @@
-name: Snyk Code Scan
+name: Testing Python Code with Tox
 
 on:
   push:
@@ -24,12 +24,6 @@ permissions:
   contents: read
 
 jobs:
-  security:
-    name: Snyk Code Scan
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-    uses: dafneb/.github/.github/workflows/snyk-code-scan-python.yml@6904641c48f453824bb2ce384a02055cd21cbc2e # v1.6.0
-    secrets:
-      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+  tox:
+    name: Run Tox Tests
+    uses: dafneb/.github/.github/workflows/tox.yml@6904641c48f453824bb2ce384a02055cd21cbc2e # v1.6.0
