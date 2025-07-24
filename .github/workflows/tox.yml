@@ -26,4 +26,4 @@ permissions:
 jobs:
   tox:
     name: Run Tox Tests
-    uses: dafneb/.github/.github/workflows/tox.yml@6904641c48f453824bb2ce384a02055cd21cbc2e # v1.6.0
+    uses: dafneb/.github/.github/workflows/tox.yml@824e6d2796b7a259ed4fa07dc69146b683131764 # v1.6.1
