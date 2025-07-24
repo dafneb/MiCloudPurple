@@ -30,6 +30,6 @@ jobs:
       actions: read
       contents: read
       security-events: write
-    uses: dafneb/.github/.github/workflows/snyk-code-scan-python.yml@3f124afb6b96358a69a6a8e70a1b62904b4da4cb
+    uses: dafneb/.github/.github/workflows/snyk-code-scan-python.yml@6904641c48f453824bb2ce384a02055cd21cbc2e
     secrets:
       SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
