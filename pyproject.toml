@@ -65,6 +65,12 @@ dev = [
 [project.urls]
 Documentation = "https://dafneb.gitbook.io/micloudpurple/"
 
+[project.scripts]
+micloudpurple = "micloudpurple/scripts.micloudpurple:main"
+## micp_azure = "micloudpurple/scripts.micp_azure:main"
+## micp_entra = "micloudpurple/scripts.micp_entra:main"
+## micp_defender = "micloudpurple/scripts.micp_defender:main"
+
 [tool.setuptools]
 package-dir = {"" = "micloudpurple"}
 
