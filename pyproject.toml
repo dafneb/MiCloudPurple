@@ -66,10 +66,11 @@ dev = [
 Documentation = "https://dafneb.gitbook.io/micloudpurple/"
 
 [project.scripts]
-micloudpurple = "micloudpurple/scripts.micloudpurple:main"
-## micp_azure = "micloudpurple/scripts.micp_azure:main"
-## micp_entra = "micloudpurple/scripts.micp_entra:main"
-## micp_defender = "micloudpurple/scripts.micp_defender:main"
+micloudpurple = "micloudpurple.scripts.micloudpurple:main"
+## mcpt_azure = "micloudpurple.scripts.mcpt_azure:main"
+## mcpt_entra = "micloudpurple.scripts.mcpt_entra:main"
+## mcpt_defender = "micloudpurple.scripts.mcpt_defender:main"
+## mcpt_m365 = "micloudpurple.scripts.mcpt_m365:main"
 
 [tool.setuptools]
 package-dir = {"" = "micloudpurple"}
