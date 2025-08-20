@@ -3,5 +3,5 @@
 # Project dependencies
 # This file is used to define the main dependencies for the project.
 # Use the `pip install -r requirements.txt` command to install these dependencies.
-requests~=2.32.4
+requests~=2.32.5
 dnspython~=2.7.0
