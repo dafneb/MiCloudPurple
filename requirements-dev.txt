@@ -4,7 +4,7 @@
 pre-commit~=4.3.0
 
 # Linters and formatters
-tox~=4.30.3
+tox~=4.32.0
 ruff~=0.14.0
 
 # Building and packaging tools
