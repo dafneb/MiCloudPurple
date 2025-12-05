@@ -1,4 +1,3 @@
--r requirements-dev.txt
 
 # Project dependencies
 # This file is used to define the main dependencies for the project.
